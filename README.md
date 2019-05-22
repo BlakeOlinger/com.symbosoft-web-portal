@@ -1,6 +1,9 @@
-# Project Title
+# Blake Olinger Portfolio App
 
-One Paragraph of project description goes here
+This portfolio application utilizes containerized microservice
+server application based on Java/Spring etc. with the client app
+implementing Single Page Progressive Web App standards using
+AngularJS.
 
 ## Getting Started
 
@@ -72,7 +75,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Blake Olinger** - *Initial work* - [GitHub Profile](https://github.com/BlakeOlinger)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -83,5 +86,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * [Markdown Cheatsheet used](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [README.md Template used](https://gist.github.com/purplebooth/109311bb0361f32d87a2)
-* [Assisted in Choosing a License](https://choosealicense.com/)
+* [Also used this Markdown syntax resource](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
+* [README.md Template used; author: Billie Thompson](https://gist.github.com/purplebooth/109311bb0361f32d87a2)
+* [Website used to Select License](https://choosealicense.com/)
