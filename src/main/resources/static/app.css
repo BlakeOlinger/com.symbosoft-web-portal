@@ -1,0 +1,14 @@
+.app {
+    margin: 0;
+    padding: 0;
+    background-color: cyan;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#init-stub {
+    margin: 0;
+    padding: 0;
+    color: darkblue;
+}
