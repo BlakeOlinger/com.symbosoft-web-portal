@@ -10,6 +10,9 @@ public class WebPortalController {
     @Value("${spring.application.name}")
     String appName;
 
+    // TODO Thymeleaf screws with client PWA caching with the extra 'th' and '{@}' in the tags
+    // serve without Thymeleaf
+
     @GetMapping("/")
     public String homePage() {
         return "index";
