@@ -1,14 +1,47 @@
 .app {
+    height: 100vh;
     margin: 0;
-    padding: 0;
     background-color: cyan;
     text-align: center;
     justify-content: center;
+    align-items: center;
     display: flex;
+    cursor: default;
+    font-family: Verdana, Geneva, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
-#init-stub {
-    margin: 0;
-    padding: 0;
-    color: darkblue;
+@media (orientation: landscape) {
+    #init-stub {
+        padding: 2vw;
+        margin: 0;
+        color: #46458b;
+        background-color: #888b89;
+        border: transparent;
+        border-radius: 10px;
+        font-size: 5vw;
+    }
 }
+
+/*
+to make text size the same simply change vw to
+vh when orientation changes then will use
+same edge
+ */
+
+@media (orientation: portrait) {
+    #init-stub {
+        margin: 0;
+        padding: 2vh;
+        color: #46458b;
+        background-color: #888b89;
+        border: transparent;
+        border-radius: 10px;
+        font-size: 5vh;
+    }
+}
+
