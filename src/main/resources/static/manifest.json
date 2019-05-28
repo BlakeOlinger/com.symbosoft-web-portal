@@ -1,0 +1,20 @@
+{
+  "short_name": "SymboSoft",
+  "name": "SymboSoft Portfolio App",
+  "icons": [ {
+    "src": "/images/random192x192icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+    {
+      "src": "/images/random512x512icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#00FFFF",
+  "display": "standalone",
+  "scope": "/",
+
+}
