@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.symbosoft</groupId>
     <artifactId>webportal</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0</version>
     <name>web-portal</name>
     <description>Primary Client Web Portal for SymboSoft Portfolia Application</description>
 
