@@ -55,6 +55,10 @@ same edge
         flex-direction: column;
     }
 
+    #header {
+        max-width: 70%;
+    }
+
     #init-stub {
         margin: 0;
         padding: 2vh;
