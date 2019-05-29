@@ -11,3 +11,5 @@ public class WebPortalApplication {
     }
 
 }
+
+// TODO research and implement spring dev tools

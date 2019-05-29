@@ -1,3 +1,8 @@
+/*
+@media all and (display-mode: standalone) media query is used to check if
+page is loading from app or website.
+ */
+
 .app {
     height: 100vh;
     margin: 0;
@@ -12,10 +17,13 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
 
 @media (orientation: landscape) {
+    .app {
+        flex-direction: row;
+    }
+
     #init-stub {
         padding: 2vw;
         margin: 0;
@@ -24,6 +32,15 @@
         border: transparent;
         border-radius: 10px;
         font-size: 5vw;
+    }
+
+    #installButton {
+        border: transparent;
+        border-radius: 5px;
+        font-size: 3vw;
+        color: #000085;
+        background: #B2B3B3;
+        margin: 2vw;
     }
 }
 
@@ -34,6 +51,10 @@ same edge
  */
 
 @media (orientation: portrait) {
+    .app {
+        flex-direction: column;
+    }
+
     #init-stub {
         margin: 0;
         padding: 2vh;
@@ -42,6 +63,15 @@ same edge
         border: transparent;
         border-radius: 10px;
         font-size: 5vh;
+    }
+
+    #installButton {
+        border: transparent;
+        border-radius: 5px;
+        font-size: 3vh;
+        color: #000085;
+        background: #B2B3B3;
+        margin: 2vh;
     }
 }
 

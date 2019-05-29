@@ -1,7 +1,11 @@
 const FILES_TO_CASH = [
-    "index.html",
+    "/",
     "app.css",
-    "app.js"
+    "app.js",
+    "manifest.json",
+    "favicon.ico",
+    "images/random192x192icon.png",
+    "images/random512x512icon.png"
 ];
 
 const CACHE_NAME = "home-page";
@@ -11,7 +15,7 @@ self.addEventListener("install", event => {
 
    event.waitUntil(
        caches.open(CACHE_NAME).then(cache => {
-           console.log("[ServiceWorker] Pre-caching offline home page");
+           console.log("ServiceWorker pre-caching offline home page");
            cache.addAll(FILES_TO_CASH);
        })
    );
@@ -19,15 +23,18 @@ self.addEventListener("install", event => {
 
 self.addEventListener("activate", evt => console.log("ServiceWorker activated."));
 
+
+// Fetch event works as expected now that I fixed the caching from index.html
+// to "/"
+
 self.addEventListener("fetch", evt => {
-    evt.respondWith(
-        fetch(evt.request)
-            .catch(() => {
-                return caches.open(CACHE_NAME)
-                    .then( cache => {
-                        return cache.match("index.html");
-                        }
-                    )
-            })
-    );
-});
+        console.log("Fetch event triggered", evt.request);
+
+        caches.match(evt.request).then(response => console.log(response));
+
+        evt.respondWith(
+            caches.match(evt.request)
+                .then(response => response || fetch(evt.request))
+        );
+    }
+);

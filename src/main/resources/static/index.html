@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>SymboSoft</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{app.css}">
-    <link rel="manifest" th:href="@{manifest.json}">
+    <link rel="stylesheet" href="app.css">
+    <link rel="manifest" href="manifest.json">
     <meta name="description" content="Web App Author: Blake Olinger, Single page single viewport
 progressive web application portfolio project. Server Application Author: Blake Olinger, Microservice
 architecture cloud based, GKE, server application. Client Companion Daemon Application Author:
@@ -14,7 +14,7 @@ beyond browser sandbox via localhost REST HTTP API calls.">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="SymboSoft Portfolio App">
-    <link rel="apple-touch-icon" th:href="@{/images/random152x152icon.png}">
+    <link rel="apple-touch-icon" href="images/random152x152icon.png">
     <meta name="theme-color" content="cyan">
 </head>
 <body oncontextmenu="return false;"
@@ -23,6 +23,7 @@ beyond browser sandbox via localhost REST HTTP API calls.">
     <h1 id="init-stub">Hello World!</h1>
 </div>
 
-<script th:src="@{app.js}"></script>
+<script src="app.js"></script>
+<script src="install.js"></script>
 </body>
 </html>
