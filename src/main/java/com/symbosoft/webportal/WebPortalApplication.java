@@ -12,4 +12,8 @@ public class WebPortalApplication {
 
 }
 
-// TODO research and implement spring dev tools
+// TODO add a "why install?" button on the app, explain benefits of PWA and how
+// to uninstall - reference codelabbs.developers.google.com/codelabs/your-first-pwapp/#6
+// for uninstall instructions across platforms - incorporate each as its own button
+// to let users know why they should install and how to remove the app
+
