@@ -17,3 +17,4 @@ public class WebPortalApplication {
 // for uninstall instructions across platforms - incorporate each as its own button
 // to let users know why they should install and how to remove the app
 
+// IP: 35.226.191.189
